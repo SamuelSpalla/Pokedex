@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 56), rgb(90, 209, 90));
+    min-height: 100vh;
+    
+}
+
+main{
+    position: relative;
+    margin-top: 3%;
+    padding: 15px;
+    display: inline-block;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 450px;
+
+}
+
+
+
+.poke_img{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    height: 18%;
+
+
+    
+
+}
+
+.poke_data{
+    position: absolute;
+    top: 54.5%;
+    right: 25%;
+    font-weight: 600;
+    font-size: clamp(8px, 6vw, 1.7rem);
+    color: gray
+}
+
+.poke_name{
+    color: black;
+}
+
+.poke_number{
+    color: green;
+}
+
+.form{
+    position: absolute;
+    width: 60%;
+    top: 70%;
+    right: 24%;
+}
+
+.input_search{
+    width: 100%;
+    padding: 3.5%;
+    outline: none;
+    font-weight: 600;
+    font-size: clamp(6px, 5vw, 1rem);
+    border: 1px solid black ; 
+    border-radius: 6px;
+    box-shadow: -3px 4px 0 rgb(124, 123, 123), -5px 7px rgb(49, 48, 48);
+
+}
+
+.buttons{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    top: 83%;
+    right: 25%;   
+}
+
+.btn{
+    width: 50%;
+    padding: 4%;
+    background-color: rgb(70, 64, 64);
+    color: white;
+    font-weight: 600;
+    font-size: clamp(8px, 6vw, 1rem);
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 rgb(37, 36, 36), -4px 5px black;
+
+}
+
+.btn:active{
+    box-shadow: inset -3px 4px 0 rgb(37, 36, 36);
+    font-size: 0.8rem;
+}
+
+    
+.buttons-v{
+    position: absolute;
+    width: 20%;
+    
+    top: 10%;
+    right: 20.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-v{
+    width: 100%;
+    padding: 4%;
+    background-color:rgb(124, 123, 123);
+    color: white;
+    font-weight: 600;
+    font-size: clamp(6px, 4vw, 0.7rem);
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.btn-v:active{
+    box-shadow: inset -2px 3px  black;
+    
+}
+
+.types{
+    position: absolute;
+    width: 40%;
+    top: 62.5%;
+    left: 26%;
+
+    background-color:rgb(73, 67, 67) ;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+}
+
+.type{
+    
+    padding: 4%;
+    font-size: clamp(6px, 4vw, 1rem);
+    color: white;
+    font-weight: 600;
+
+
+    
+}
+
+.poke_altura{
+    position: absolute;
+    top: 23.5%;
+    left: 19%;
+}

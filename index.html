@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/pokeball.png" type="image/x-icon">
+
+    
+    <title>Pokedex</title>
+</head>
+<body>
+    <main data-aos="flip-right" data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+        <img src="img/pokedex.png" alt="Pokedex" class="pokedex">
+        <img src="#" alt="Pokemon" class="poke_img">
+        
+        <h1 class="poke_data">
+            <span class="poke_number"></span> -
+            <span class="poke_name"></span>
+        </h1>
+
+        <h2 class="types">
+            <span class="type type-1"></span>
+            <span class="type type-2"></span>
+        </h2>
+
+        <h3 class="poke_altura">
+            <span class="alt alt-poke"></span>
+        </h3>
+
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Número ou Nome" required>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-prev"> &lt; Voltar </button>
+            <button class="btn btn-next"> Próximo &gt; </button>
+        </div>
+        <div class="buttons-v">
+            <button class="btn-v btn-shiny">Shiny</button>
+            <button class="btn-v btn-default">Normal</button>
+        </div>
+    </main>
+    
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+<script src="js/javascript.js"></script>
+<script src="js/javascript2.js"></script>
+
+  
+</html>
