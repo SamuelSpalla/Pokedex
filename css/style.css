@@ -9,7 +9,6 @@
 
 body{
     text-align: center;
-    background: linear-gradient(rgb(0, 0, 56), rgb(90, 209, 90));
     min-height: 100vh;
     
 }
@@ -51,6 +50,7 @@ main{
 
 .poke_name{
     color: black;
+    text-transform: capitalize;
 }
 
 .poke_number{
@@ -59,13 +59,16 @@ main{
 
 .form{
     position: absolute;
-    width: 60%;
+    width: 80%;
     top: 70%;
-    right: 24%;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    
 }
 
 .input_search{
-    width: 100%;
+    width: 70%;
     padding: 3.5%;
     outline: none;
     font-weight: 600;
@@ -76,12 +79,25 @@ main{
 
 }
 
+.button-pesq{
+    width: 20%;
+    position: absolute;
+    right: 14%;
+    top:30%
+}
+
+.form img{
+    width: 30%;
+    height: 5%;
+    cursor: pointer;
+}
+
 .buttons{
     position: absolute;
     width: 60%;
     display: flex;
     gap: 20px;
-    top: 83%;
+    top: 81%;
     right: 25%;   
 }
 
@@ -126,6 +142,15 @@ main{
     
 }
 
+.btn-shiny{
+    background: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
 .btn-v:active{
     box-shadow: inset -2px 3px  black;
     
@@ -138,7 +163,7 @@ main{
     left: 26%;
 
     background-color:rgb(73, 67, 67) ;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     box-shadow:  -2px 3px black;
 }
@@ -149,6 +174,7 @@ main{
     font-size: clamp(6px, 4vw, 1rem);
     color: white;
     font-weight: 600;
+    text-transform: capitalize;
 
 
     
@@ -156,6 +182,162 @@ main{
 
 .poke_altura{
     position: absolute;
-    top: 23.5%;
+    top: 23%;
     left: 19%;
+    font-size: clamp(6px, 4vw, 1.2rem);
+    
+}
+
+.alt{
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.poke_peso{
+    position: absolute;
+    top: 23%;
+    left: 54% ;
+    font-size: clamp(6px, 4vw, 1.2rem);
+    
+
+}
+
+.peso{
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.stats{
+    background-color: #ff1a4c;
+    position: absolute;
+    left: 10%;
+    top: 97%;
+    width: 77%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.hide{
+    opacity: 1;
+    
+}
+
+.stats .status{
+    display: flex;
+    color: white;
+    height: 25%;
+    width: 100%;
+    max-width: 130px;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(73, 67, 67) ;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+}
+
+.btn-status{
+    position: absolute;
+    bottom: 6.5%;
+    right: 50%;
+    width: 10%;
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+
+
+}
+    
+.btn-status:active{
+    box-shadow: inset -2px 3px  black;
+    font-size: clamp(5px, 3vw, 0.7rem);
+    
+}
+
+.seta{
+    rotate: 180deg;
+    
+}
+
+.center{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+}
+
+.poke_img-static{
+    width: 120%;
+
+}
+
+.gen{
+    position: absolute;
+    top: 6.5%;
+    left: 18%;
+    font-weight: 600;
+    font-size: clamp(5px, 3vw, 2rem);
+    color: rgba(0, 0, 0, 0.664);
+}
+
+
+.fundo-normal{
+    background: url(../img/unnamed.jpg);
+    background-size: cover;
+}
+
+.fundo-1{
+    background: url(../img/kantoo.jpg) center center;
+    background-size: cover;
+}
+
+.fundo-2{
+    background: url(../img/johto.png) center center;
+    background-size: cover;
+}
+
+.fundo-3{
+    background: url(../img/hoenn.png) center center;
+    background-size: cover;
+}
+
+.fundo-4{
+    background: url(../img/sinnoh.png) center center;
+    background-size: cover;
+}
+
+.fundo-5{
+    background: url(../img/unova.png) center center;
+    background-size: cover;
+}
+
+.fundo-6{
+    background: url(../img/kalos.png) center center;
+    background-size: cover;
+}
+
+.fundo-7{
+    background: url(../img/alola.png) center center;
+    background-size: cover;
+}
+
+.fundo-8{
+    background: url(../img/galar.jpg) center center;
+    background-size: cover;
 }
