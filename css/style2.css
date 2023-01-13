@@ -1,0 +1,135 @@
+.fundo-normal{
+    background: url(../img/unnamed.jpg);
+    background-size: cover;
+}
+
+.fundo-1{
+    background: url(../img/kantoo.jpg) center center;
+    background-size: cover;
+}
+
+.fundo-2{
+    background: url(../img/johto.png) center center;
+    background-size: cover;
+}
+
+.fundo-3{
+    background: url(../img/hoenn.png) center center;
+    background-size: cover;
+}
+
+.fundo-4{
+    background: url(../img/sinnoh.png) center center;
+    background-size: cover;
+}
+
+.fundo-5{
+    background: url(../img/unova.png) center center;
+    background-size: cover;
+}
+
+.fundo-6{
+    background: url(../img/kalos.png) center center;
+    background-size: cover;
+}
+
+.fundo-7{
+    background: url(../img/alola.png) center center;
+    background-size: cover;
+}
+
+.fundo-8{
+    background: url(../img/galar.jpg) center center;
+    background-size: cover;
+}
+
+
+.types .grass{
+    background-color: green;
+}
+
+.types .fire{
+    background-color: red;
+    color: white;
+}
+
+.types .poison{
+    background-color: rgb(151, 18, 151);
+    color: white;
+}
+
+.types .flying{
+    background-color: rgb(143, 143, 209);
+}
+
+.types .water{
+    background-color: rgb(0, 38, 255);
+    color: white;
+}
+
+.types .bug{
+    background-color: rgb(131, 170, 65);
+    
+}
+
+.types .normal{
+    background-color: gray;
+    color: white;
+}
+
+.types .electric{
+    background-color: yellow;
+}
+
+.types .ground{
+    background: linear-gradient(to bottom, rgb(141, 38, 38), yellow);
+}
+
+.types .fairy{
+    background-color: rgb(255, 171, 185);
+}
+
+.types .fighting{
+    background-color:rgb(165, 0, 0);
+    color: white;
+}
+
+.types .psychic{
+    background-color:rgb(233, 16, 143);
+    color: white;
+}
+
+.types .rock{
+    background-color: rgb(192, 162, 61);
+}
+
+.types .steel{
+    background-color: silver;
+}
+
+.types .ice{
+    background-color: rgb(139, 235, 235);
+    
+}
+
+.types .ghost{
+    background-color: rgb(98, 0, 255);
+    color: white;
+}
+
+.types .dragon{
+    background: linear-gradient(to bottom, blue, red);
+    color: white;
+}
+
+.types .dark{
+    background: rgb(43, 42, 42);
+    color: white;
+}
+
+.types .error{
+    background: linear-gradient(to bottom, blue, red);
+    color: white;
+}
+
+

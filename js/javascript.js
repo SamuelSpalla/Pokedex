@@ -7,7 +7,7 @@ const btnPrev = document.querySelector('.btn-prev')
 const btnNext = document.querySelector('.btn-next')
 const btnShiny = document.querySelector('.btn-shiny')
 const btnDefault = document.querySelector('.btn-default')
-const pokeType1 = document.querySelector('.type-1')
+const pokeType = document.querySelector('.types')
 const pokeType2 = document.querySelector('.type-2')
 const pokeAlt = document.querySelector('.alt-poke')
 const pokePESO = document.querySelector('.peso-poke')
@@ -63,7 +63,7 @@ const mainPoke = async (pokemon) =>{
         pokeSpDEF.innerHTML = (`SP-DEFESA: ${data.stats[4].base_stat}`)
         pokeSPEED.innerHTML = (`VELOCIDADE: ${data.stats[5].base_stat}`)
 
-        if(data.types[1]){
+        /*if(data.types[1]){
             pokeType1.innerHTML = data.types[0].type.name
             pokeType2.innerHTML = data.types[1].type.name
             
@@ -71,7 +71,7 @@ const mainPoke = async (pokemon) =>{
         else{
             pokeType1.innerHTML = data.types[0].type.name
             pokeType2.innerHTML = ''
-        }
+        }*/
 
         if (data.id){
             let verificador = data.id
@@ -117,7 +117,15 @@ const mainPoke = async (pokemon) =>{
                     }
                 }
             }
-        }            
+        }
+        
+        if(data.types['1']){
+            pokeType.innerHTML = '<div class="' + data.types[0].type.name + '">' + data.types[0].type.name + '</div><div class="' + 
+            data.types[1].type.name + '">' + data.types[1].type.name + '</div>'
+        } else{
+            pokeType.innerHTML = '<div class="' + data.types[0].type.name + '">' + data.types[0].type.name + '</div>'
+        }
+
         btnShiny.addEventListener('click', () => {
             pokeImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
             pokeImgStatic.src = data['sprites']['front_shiny']
@@ -132,6 +140,7 @@ const mainPoke = async (pokemon) =>{
         }
     }    
     else{
+        pokeType.innerHTML = ' '
         pokeImg.style.display = 'none'
         pokeName.innerHTML = 'Não encontrado'
         pokeNumber.innerHTML = ' '

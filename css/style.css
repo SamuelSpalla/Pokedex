@@ -162,23 +162,24 @@ main{
     top: 62.5%;
     left: 26%;
 
-    background-color:rgb(73, 67, 67) ;
+    display: flex;
+    gap:10px;
+}
+
+.types div{
+    width: 50%;
+
+    background-color:white;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow:  -2px 3px black;
-}
-
-.type{
-    
-    padding: 4%;
-    font-size: clamp(6px, 4vw, 1rem);
-    color: white;
+    padding: 2%;
+    font-size: clamp(6px, 4vw, 1.1rem);
+    color: black;
     font-weight: 600;
     text-transform: capitalize;
-
-
-    
 }
+
 
 .poke_altura{
     position: absolute;
@@ -297,47 +298,3 @@ main{
 }
 
 
-.fundo-normal{
-    background: url(../img/unnamed.jpg);
-    background-size: cover;
-}
-
-.fundo-1{
-    background: url(../img/kantoo.jpg) center center;
-    background-size: cover;
-}
-
-.fundo-2{
-    background: url(../img/johto.png) center center;
-    background-size: cover;
-}
-
-.fundo-3{
-    background: url(../img/hoenn.png) center center;
-    background-size: cover;
-}
-
-.fundo-4{
-    background: url(../img/sinnoh.png) center center;
-    background-size: cover;
-}
-
-.fundo-5{
-    background: url(../img/unova.png) center center;
-    background-size: cover;
-}
-
-.fundo-6{
-    background: url(../img/kalos.png) center center;
-    background-size: cover;
-}
-
-.fundo-7{
-    background: url(../img/alola.png) center center;
-    background-size: cover;
-}
-
-.fundo-8{
-    background: url(../img/galar.jpg) center center;
-    background-size: cover;
-}
